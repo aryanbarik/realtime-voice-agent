@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.env
+.env.selfhost
+models/
+data/
+logs/
+results/*/traces/
+eval/.cache/
+infra/gpu/.pod_id
+baseline/.venv/

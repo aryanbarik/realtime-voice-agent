@@ -1,0 +1,18 @@
+[project]
+name = "voice-agent"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.165", "uvicorn[standard]>=0.54", "websockets>=17.4",
+  "httpx>=0.28.1", "openai>=3.58", "pydantic-settings>=2.16",
+  "pyyaml>=6.0.4", "numpy>=2.5", "onnxruntime>=1.32",
+  "transformers>=5.24", "huggingface-hub>=2.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=9.2", "pytest-asyncio>=1.5"]
+eval = ["matplotlib>=3.11", "jiwer>=4.0"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
