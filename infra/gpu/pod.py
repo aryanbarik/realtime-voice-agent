@@ -149,10 +149,18 @@ def urls() -> tuple[str, str]:
 def cmd_wait(_args) -> None:
     key = require("SELFHOST_API_KEY")
     headers = {"Authorization": f"Bearer {key}"}
-    llm, sp = urls()
     deadline = time.monotonic() + 40 * 60
     speech_ok = llm_ok = False
     while time.monotonic() < deadline:
+        if not (llm_ok and speech_ok):
+            mappings = {int(p["private"]): p for p in ports(get_pod())
+                        if p.get("private") is not None and p.get("ip") and p.get("public")}
+            if 8000 not in mappings or 8001 not in mappings:
+                print("waiting for public pod endpoints")
+                time.sleep(10)
+                continue
+            llm = f"http://{mappings[8000]['ip']}:{mappings[8000]['public']}"
+            sp = f"http://{mappings[8001]['ip']}:{mappings[8001]['public']}"
         if not speech_ok:
             try:
                 speech_ok = httpx.get(f"{sp}/health", headers=headers, timeout=5).status_code == 200
