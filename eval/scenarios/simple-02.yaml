@@ -1,0 +1,23 @@
+id: simple-02
+category: simple
+caller:
+  name: David Okafor
+  goal: Book a table for six on Friday, November 27 at 6 PM under the name David Okafor.
+  persona: Polite but in a hurry.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: David Okafor
+    party_size: 6
+    date: '2026-11-27'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

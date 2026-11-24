@@ -1,0 +1,23 @@
+id: simple-05
+category: simple
+caller:
+  name: Daniel Kim
+  goal: Book a table for three on Monday, December 7 at 8:30 PM under the name Daniel Kim.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Daniel Kim
+    party_size: 3
+    date: '2026-12-07'
+    time: '20:30'
+  cancelled: []
+max_caller_turns: 10

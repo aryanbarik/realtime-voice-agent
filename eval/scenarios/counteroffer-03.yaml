@@ -1,0 +1,27 @@
+id: counteroffer-03
+category: counteroffer
+caller:
+  name: Samuel Adler
+  goal: Book a table for four on Monday, November 30 at 6:30 PM under the name Samuel Adler. If that time
+    is not available, accept the first alternative the agent offers that is within one hour of your requested
+    time.
+  persona: Polite but in a hurry.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked:
+  - date: '2026-11-30'
+    time: '18:30'
+  reservations: []
+expected:
+  reservations:
+  - name: Samuel Adler
+    party_size: 4
+    date: '2026-11-30'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

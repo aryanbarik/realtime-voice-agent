@@ -1,0 +1,23 @@
+id: long_pause-03
+category: long_pause
+caller:
+  name: Ryan Murphy
+  goal: Book a table for six on Thursday, November 26 at 8:30 PM under the name Ryan Murphy.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 1800
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Ryan Murphy
+    party_size: 6
+    date: '2026-11-26'
+    time: '20:30'
+  cancelled: []
+max_caller_turns: 10

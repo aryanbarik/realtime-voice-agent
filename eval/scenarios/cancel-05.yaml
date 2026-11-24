@@ -1,0 +1,32 @@
+id: cancel-05
+category: cancel
+caller:
+  name: Emily Chen
+  goal: Cancel your reservation on Monday, December 7 under the name Emily Chen. Do not book anything
+    new.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations:
+  - name: Emily Chen
+    party_size: 2
+    date: '2026-12-07'
+    time: '19:30'
+  - name: Hannah Schmidt
+    party_size: 5
+    date: '2026-11-26'
+    time: '19:30'
+expected:
+  reservations: []
+  cancelled:
+  - name: Emily Chen
+    party_size: 2
+    date: '2026-12-07'
+    time: '19:30'
+max_caller_turns: 10

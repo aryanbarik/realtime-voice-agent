@@ -1,0 +1,27 @@
+id: counteroffer-04
+category: counteroffer
+caller:
+  name: Nora Larsen
+  goal: Book a table for two on Tuesday, December 1 at 7:30 PM under the name Nora Larsen. If that time
+    is not available, accept the first alternative the agent offers that is within one hour of your requested
+    time.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked:
+  - date: '2026-12-01'
+    time: '19:30'
+  reservations: []
+expected:
+  reservations:
+  - name: Nora Larsen
+    party_size: 2
+    date: '2026-12-01'
+    time: '19:00'
+  cancelled: []
+max_caller_turns: 10

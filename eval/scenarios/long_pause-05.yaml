@@ -1,0 +1,23 @@
+id: long_pause-05
+category: long_pause
+caller:
+  name: Isabella Costa
+  goal: Book a table for six on Saturday, December 5 at 7 PM under the name Isabella Costa.
+  persona: Chatty and warm.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 1500
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Isabella Costa
+    party_size: 6
+    date: '2026-12-05'
+    time: '19:00'
+  cancelled: []
+max_caller_turns: 10

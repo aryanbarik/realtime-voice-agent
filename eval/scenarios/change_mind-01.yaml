@@ -1,0 +1,25 @@
+id: change_mind-01
+category: change_mind
+caller:
+  name: Ethan Walker
+  goal: Start by asking for a table for three on Sunday, November 29 at 8:30 PM under the name Ethan Walker.
+    After the agent reads the booking details back, but before you say yes, change your mind and ask for
+    8 PM instead. Confirm only the 8 PM booking.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Ethan Walker
+    party_size: 3
+    date: '2026-11-29'
+    time: '20:00'
+  cancelled: []
+max_caller_turns: 10

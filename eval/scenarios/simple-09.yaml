@@ -1,0 +1,23 @@
+id: simple-09
+category: simple
+caller:
+  name: Lucas Silva
+  goal: Book a table for five on Friday, December 4 at 8 PM under the name Lucas Silva.
+  persona: Chatty and warm.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Lucas Silva
+    party_size: 5
+    date: '2026-12-04'
+    time: '20:00'
+  cancelled: []
+max_caller_turns: 10

@@ -1,0 +1,25 @@
+id: change_mind-06
+category: change_mind
+caller:
+  name: Priya Raman
+  goal: Start by asking for a table for two on Thursday, December 3 at 6 PM under the name Priya Raman.
+    After the agent reads the booking details back, but before you say yes, change your mind and ask for
+    6:30 PM instead. Confirm only the 6:30 PM booking.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Priya Raman
+    party_size: 2
+    date: '2026-12-03'
+    time: '18:30'
+  cancelled: []
+max_caller_turns: 10

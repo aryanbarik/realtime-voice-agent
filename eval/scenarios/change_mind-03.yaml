@@ -1,0 +1,25 @@
+id: change_mind-03
+category: change_mind
+caller:
+  name: Daniel Kim
+  goal: Start by asking for a table for five on Monday, November 30 at 7:30 PM under the name Daniel Kim.
+    After the agent reads the booking details back, but before you say yes, change your mind and ask for
+    6 PM instead. Confirm only the 6 PM booking.
+  persona: Calm and direct.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Daniel Kim
+    party_size: 5
+    date: '2026-11-30'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

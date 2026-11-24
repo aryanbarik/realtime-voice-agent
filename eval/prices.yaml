@@ -1,0 +1,7 @@
+deepgram_stream_per_min: 0.0048
+deepgram_batch_per_min: 0.0043
+openai_per_1m:
+  gpt-6-luna: {input: 0.10, cached_input: 0.01, output: 0.50}
+cartesia_per_char: 0.0000392
+gpu_per_hour:
+  runpod_a40_secure: 0.59

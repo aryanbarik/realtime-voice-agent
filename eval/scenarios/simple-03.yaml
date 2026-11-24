@@ -1,0 +1,23 @@
+id: simple-03
+category: simple
+caller:
+  name: Ethan Walker
+  goal: Book a table for three on Saturday, November 28 at 7:30 PM under the name Ethan Walker.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Ethan Walker
+    party_size: 3
+    date: '2026-11-28'
+    time: '19:30'
+  cancelled: []
+max_caller_turns: 10

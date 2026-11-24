@@ -1,0 +1,23 @@
+id: long_pause-02
+category: long_pause
+caller:
+  name: Nora Larsen
+  goal: Book a table for six on Tuesday, November 24 at 6:30 PM under the name Nora Larsen.
+  persona: Chatty and warm.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 1500
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Nora Larsen
+    party_size: 6
+    date: '2026-11-24'
+    time: '18:30'
+  cancelled: []
+max_caller_turns: 10

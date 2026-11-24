@@ -1,0 +1,28 @@
+id: interrupt-06
+category: interrupt
+caller:
+  name: Anna Petrova
+  goal: Book a table on Thursday, November 26 at 6 PM under the name Anna Petrova. Your party size is
+    five. Initially you may mention four, but you will correct it to five when you interrupt the agent.
+    The final booking must be for five.
+  persona: Chatty and warm.
+  spell_name: false
+behaviors:
+  interrupt:
+    agent_turn: 2
+    after_ms: 1200
+    instruction: Interrupt to change the party size to 5
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Anna Petrova
+    party_size: 5
+    date: '2026-11-26'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

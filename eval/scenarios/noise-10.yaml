@@ -1,0 +1,28 @@
+id: noise-10
+category: noise
+caller:
+  name: Noah Patel
+  goal: Book a table for two on Tuesday, December 1 at 7 PM under the name Noah Patel. If that time is
+    not available, accept the first alternative the agent offers that is within one hour of your requested
+    time.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise:
+  snr_db: 20
+seed:
+  capacity_covers: 24
+  blocked:
+  - date: '2026-12-01'
+    time: '19:00'
+  reservations: []
+expected:
+  reservations:
+  - name: Noah Patel
+    party_size: 2
+    date: '2026-12-01'
+    time: '18:30'
+  cancelled: []
+max_caller_turns: 10

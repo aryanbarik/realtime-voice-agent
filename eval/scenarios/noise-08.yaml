@@ -1,0 +1,28 @@
+id: noise-08
+category: noise
+caller:
+  name: James Carter
+  goal: Book a table for three on Saturday, December 5 at 6:30 PM under the name James Carter. If that
+    time is not available, accept the first alternative the agent offers that is within one hour of your
+    requested time.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise:
+  snr_db: 10
+seed:
+  capacity_covers: 24
+  blocked:
+  - date: '2026-12-05'
+    time: '18:30'
+  reservations: []
+expected:
+  reservations:
+  - name: James Carter
+    party_size: 3
+    date: '2026-12-05'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

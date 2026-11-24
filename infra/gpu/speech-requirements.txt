@@ -1,0 +1,7 @@
+nemo-toolkit[asr]==3.0.0
+kokoro==0.9.4
+silero-vad==6.3
+fastapi>=0.165
+uvicorn[standard]>=0.54
+numpy
+soundfile

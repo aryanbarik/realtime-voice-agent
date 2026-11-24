@@ -1,0 +1,32 @@
+id: cancel-03
+category: cancel
+caller:
+  name: Maria Garcia
+  goal: Cancel your reservation on Tuesday, December 1 under the name Maria Garcia. Do not book anything
+    new.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations:
+  - name: Maria Garcia
+    party_size: 3
+    date: '2026-12-01'
+    time: '19:00'
+  - name: Alex Johnson
+    party_size: 5
+    date: '2026-12-03'
+    time: '18:00'
+expected:
+  reservations: []
+  cancelled:
+  - name: Maria Garcia
+    party_size: 3
+    date: '2026-12-01'
+    time: '19:00'
+max_caller_turns: 10

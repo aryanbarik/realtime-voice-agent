@@ -1,0 +1,28 @@
+id: interrupt-05
+category: interrupt
+caller:
+  name: Tara Singh
+  goal: Book a table on Tuesday, December 1 at 7:30 PM under the name Tara Singh. Your party size is five.
+    Initially you may mention three, but you will correct it to five when you interrupt the agent. The
+    final booking must be for five.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt:
+    agent_turn: 2
+    after_ms: 1200
+    instruction: Interrupt to change the party size to 5
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Tara Singh
+    party_size: 5
+    date: '2026-12-01'
+    time: '19:30'
+  cancelled: []
+max_caller_turns: 10

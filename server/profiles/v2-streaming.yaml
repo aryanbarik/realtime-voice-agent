@@ -1,0 +1,3 @@
+turn: {detector: asr_endpointing}
+vad: {enabled: false}
+barge_in: {enabled: false}

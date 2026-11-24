@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bella Vista Voice Agent</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+  main { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; padding: 16px; max-width: 1100px; margin: auto; }
+  h1 { grid-column: 1 / -1; margin: 0; font-size: 20px; }
+  button { font-size: 16px; padding: 10px 18px; border-radius: 6px; border: 0; cursor: pointer; }
+  #start { background: #2e7d32; color: #fff; } #hangup { background: #c62828; color: #fff; }
+  #ptt { background: #1565c0; color: #fff; user-select: none; }
+  button:disabled { opacity: .4; cursor: default; }
+  .panel { background: #1c1c1c; border-radius: 8px; padding: 12px; }
+  #transcript { height: 360px; overflow-y: auto; }
+  .msg { margin: 6px 0; } .user { color: #8ecbff; } .agent { color: #b5f0b5; } .interim { opacity: .6; }
+  #tools { height: 120px; overflow-y: auto; font: 12px monospace; margin-top: 12px; }
+  #v2v { font-size: 56px; font-weight: 700; } #v2v small { font-size: 18px; font-weight: 400; }
+  #breakdown, #p50 { font: 13px monospace; white-space: pre; }
+  #status { margin-left: 12px; opacity: .7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Bella Vista Voice Agent <span id="status">idle</span></h1>
+  <section>
+    <div>
+      <button id="start">Start call</button>
+      <button id="hangup" disabled>Hang up</button>
+      <button id="ptt" hidden>Hold to talk</button>
+    </div>
+    <div class="panel" id="transcript" style="margin-top:12px"></div>
+    <div class="panel" id="tools"><b>Tool log</b></div>
+  </section>
+  <aside class="panel" id="latency">
+    <div>Voice-to-voice</div>
+    <div id="v2v">—<small> ms</small></div>
+    <div id="breakdown"></div>
+    <div id="p50"></div>
+  </aside>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

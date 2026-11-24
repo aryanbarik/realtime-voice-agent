@@ -1,0 +1,23 @@
+app = "realtime-voice-agent-aryanbarik"
+primary_region = "iad"
+
+[env]
+  VA_PUBLIC_DEMO = "1"
+  VA_PROFILE = "v4-hosted"
+  VA_DB_PATH = "/data/backend.db"
+  VA_DAILY_BUDGET_USD = "3"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[mounts]]
+  source = "data"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-2x"
+  memory = "2gb"

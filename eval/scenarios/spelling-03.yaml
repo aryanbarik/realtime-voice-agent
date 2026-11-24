@@ -1,0 +1,24 @@
+id: spelling-03
+category: spelling
+caller:
+  name: Krzysztof Wojciechowski
+  goal: Book a table for three on Friday, November 27 at 8:30 PM under the name Krzysztof Wojciechowski.
+    The name is hard to hear, so spell it out letter by letter after saying it.
+  persona: Friendly and concise.
+  spell_name: true
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Krzysztof Wojciechowski
+    party_size: 3
+    date: '2026-11-27'
+    time: '20:30'
+  cancelled: []
+max_caller_turns: 10

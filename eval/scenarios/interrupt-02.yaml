@@ -1,0 +1,28 @@
+id: interrupt-02
+category: interrupt
+caller:
+  name: Laura Rossi
+  goal: Book a table on Tuesday, November 24 at 6 PM under the name Laura Rossi. Your party size is seven.
+    Initially you may mention two, but you will correct it to seven when you interrupt the agent. The
+    final booking must be for seven.
+  persona: Calm and direct.
+  spell_name: false
+behaviors:
+  interrupt:
+    agent_turn: 2
+    after_ms: 1200
+    instruction: Interrupt to change the party size to 7
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Laura Rossi
+    party_size: 7
+    date: '2026-11-24'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

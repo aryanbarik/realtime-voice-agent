@@ -1,0 +1,25 @@
+id: change_mind-05
+category: change_mind
+caller:
+  name: Michael Brown
+  goal: Start by asking for a table for five on Friday, November 27 at 6:30 PM under the name Michael
+    Brown. After the agent reads the booking details back, but before you say yes, change your mind and
+    ask for 6 PM instead. Confirm only the 6 PM booking.
+  persona: Chatty and warm.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Michael Brown
+    party_size: 5
+    date: '2026-11-27'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

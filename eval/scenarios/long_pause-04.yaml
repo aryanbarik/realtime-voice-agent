@@ -1,0 +1,23 @@
+id: long_pause-04
+category: long_pause
+caller:
+  name: Sophie Martin
+  goal: Book a table for four on Sunday, December 6 at 8 PM under the name Sophie Martin.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 1200
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Sophie Martin
+    party_size: 4
+    date: '2026-12-06'
+    time: '20:00'
+  cancelled: []
+max_caller_turns: 10

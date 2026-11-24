@@ -1,0 +1,5 @@
+warmup: true
+speculative: {enabled: true}
+asr: {provider: parakeet}
+llm: {provider: vllm, model: Qwen/Qwen2.5-7B-Instruct}
+tts: {provider: kokoro, voice: af_heart}

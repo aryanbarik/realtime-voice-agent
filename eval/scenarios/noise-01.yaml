@@ -1,0 +1,24 @@
+id: noise-01
+category: noise
+caller:
+  name: Chloe Dubois
+  goal: Book a table for four on Wednesday, December 2 at 8 PM under the name Chloe Dubois.
+  persona: Polite but in a hurry.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise:
+  snr_db: 20
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Chloe Dubois
+    party_size: 4
+    date: '2026-12-02'
+    time: '20:00'
+  cancelled: []
+max_caller_turns: 10

@@ -1,0 +1,32 @@
+id: cancel-02
+category: cancel
+caller:
+  name: James Carter
+  goal: Cancel your reservation on Friday, December 4 under the name James Carter. Do not book anything
+    new.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations:
+  - name: James Carter
+    party_size: 4
+    date: '2026-12-04'
+    time: '19:30'
+  - name: Noah Patel
+    party_size: 4
+    date: '2026-12-05'
+    time: '19:30'
+expected:
+  reservations: []
+  cancelled:
+  - name: James Carter
+    party_size: 4
+    date: '2026-12-04'
+    time: '19:30'
+max_caller_turns: 10

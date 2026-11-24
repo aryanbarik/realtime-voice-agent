@@ -1,0 +1,27 @@
+id: counteroffer-06
+category: counteroffer
+caller:
+  name: Sophie Martin
+  goal: Book a table for four on Sunday, November 29 at 8:30 PM under the name Sophie Martin. If that
+    time is not available, accept the first alternative the agent offers that is within one hour of your
+    requested time.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked:
+  - date: '2026-11-29'
+    time: '20:30'
+  reservations: []
+expected:
+  reservations:
+  - name: Sophie Martin
+    party_size: 4
+    date: '2026-11-29'
+    time: '20:00'
+  cancelled: []
+max_caller_turns: 10

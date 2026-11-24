@@ -1,0 +1,23 @@
+id: long_pause-01
+category: long_pause
+caller:
+  name: Samuel Adler
+  goal: Book a table for three on Tuesday, December 1 at 8:30 PM under the name Samuel Adler.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 1200
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Samuel Adler
+    party_size: 3
+    date: '2026-12-01'
+    time: '20:30'
+  cancelled: []
+max_caller_turns: 10

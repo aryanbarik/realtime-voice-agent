@@ -1,0 +1,23 @@
+id: simple-11
+category: simple
+caller:
+  name: Henry Foster
+  goal: Book a table for three on Saturday, November 28 at 6:30 PM under the name Henry Foster.
+  persona: Polite but in a hurry.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Henry Foster
+    party_size: 3
+    date: '2026-11-28'
+    time: '18:30'
+  cancelled: []
+max_caller_turns: 10

@@ -1,0 +1,23 @@
+id: simple-07
+category: simple
+caller:
+  name: Michael Brown
+  goal: Book a table for two on Wednesday, November 25 at 8 PM under the name Michael Brown.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Michael Brown
+    party_size: 2
+    date: '2026-11-25'
+    time: '20:00'
+  cancelled: []
+max_caller_turns: 10

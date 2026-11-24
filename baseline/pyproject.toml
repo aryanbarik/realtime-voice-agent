@@ -1,0 +1,10 @@
+[project]
+name = "voice-agent-baseline"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pipecat-ai[deepgram,openai,cartesia,silero,websocket]==1.17.0",
+    "httpx>=0.28.1",
+    "fastapi>=0.165",
+    "uvicorn[standard]>=0.54",
+]

@@ -1,0 +1,24 @@
+id: noise-06
+category: noise
+caller:
+  name: Omar Haddad
+  goal: Book a table for three on Thursday, December 3 at 6:30 PM under the name Omar Haddad.
+  persona: Calm and direct.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise:
+  snr_db: 5
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Omar Haddad
+    party_size: 3
+    date: '2026-12-03'
+    time: '18:30'
+  cancelled: []
+max_caller_turns: 10

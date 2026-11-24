@@ -1,0 +1,23 @@
+id: simple-01
+category: simple
+caller:
+  name: Mateo Fernandez
+  goal: Book a table for five on Thursday, December 3 at 8 PM under the name Mateo Fernandez.
+  persona: Friendly and concise.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Mateo Fernandez
+    party_size: 5
+    date: '2026-12-03'
+    time: '20:00'
+  cancelled: []
+max_caller_turns: 10

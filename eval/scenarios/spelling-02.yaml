@@ -1,0 +1,24 @@
+id: spelling-02
+category: spelling
+caller:
+  name: Nguyen Thi Thao
+  goal: Book a table for three on Thursday, November 26 at 6 PM under the name Nguyen Thi Thao. The name
+    is hard to hear, so spell it out letter by letter after saying it.
+  persona: Polite but in a hurry.
+  spell_name: true
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations: []
+expected:
+  reservations:
+  - name: Nguyen Thi Thao
+    party_size: 3
+    date: '2026-11-26'
+    time: '18:00'
+  cancelled: []
+max_caller_turns: 10

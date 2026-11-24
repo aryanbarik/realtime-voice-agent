@@ -1,0 +1,32 @@
+id: cancel-01
+category: cancel
+caller:
+  name: Chloe Dubois
+  goal: Cancel your reservation on Saturday, December 5 under the name Chloe Dubois. Do not book anything
+    new.
+  persona: A little unsure, but cooperative.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations:
+  - name: Chloe Dubois
+    party_size: 2
+    date: '2026-12-05'
+    time: '20:30'
+  - name: Omar Haddad
+    party_size: 4
+    date: '2026-11-24'
+    time: '20:30'
+expected:
+  reservations: []
+  cancelled:
+  - name: Chloe Dubois
+    party_size: 2
+    date: '2026-12-05'
+    time: '20:30'
+max_caller_turns: 10

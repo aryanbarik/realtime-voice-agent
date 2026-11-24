@@ -1,0 +1,32 @@
+id: cancel-04
+category: cancel
+caller:
+  name: Zoe Anderson
+  goal: Cancel your reservation on Friday, November 27 under the name Zoe Anderson. Do not book anything
+    new.
+  persona: Calm and direct.
+  spell_name: false
+behaviors:
+  interrupt: null
+  pause_ms: 0
+noise: null
+seed:
+  capacity_covers: 24
+  blocked: []
+  reservations:
+  - name: Zoe Anderson
+    party_size: 3
+    date: '2026-11-27'
+    time: '19:00'
+  - name: Grace Turner
+    party_size: 5
+    date: '2026-12-05'
+    time: '18:30'
+expected:
+  reservations: []
+  cancelled:
+  - name: Zoe Anderson
+    party_size: 3
+    date: '2026-11-27'
+    time: '19:00'
+max_caller_turns: 10

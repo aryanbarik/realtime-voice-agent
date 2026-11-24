@@ -1,0 +1,4 @@
+mode: batch
+turn: {detector: push_to_talk}
+vad: {enabled: false}
+barge_in: {enabled: false}

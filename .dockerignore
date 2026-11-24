@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.env
+.env.selfhost
+models/
+data/
+logs/
+results/
+eval/.cache/
+baseline/
+.git/
